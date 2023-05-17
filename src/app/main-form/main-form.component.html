@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center ">
+        <div class="col-sm-4  form-down">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="d-flex justify-content-center">Login</h2>
+                </div>
+                <div class="card-body">
+                    <form class="needs-validation" novalidate [ngClass]="{ 'was-validated': validate }">
+
+                        <!--First Name  -->
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-sm-6">
+                                <label class="form-label" for="validationCustom01">First name</label>
+                                <input class="form-control" id="validationCustom01" type="text" placeholder="First name"
+                                    required="" />
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-sm-6 mt-3">
+                                <label class="form-label" for="validationCustom02">Last name</label>
+                                <input class="form-control" id="validationCustom02" type="text" placeholder="Last name"
+                                    required="" />
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+                        </div>
+
+                        <!-- Username -->
+                        <div class="row d-flex justify-content-center ">
+                            <div class="col-sm-6 mt-3">
+                                <label class="form-label" for="validationCustomUsername">Username</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input class="form-control" id="validationCustomUsername" type="text"
+                                        placeholder="Username" aria-describedby="inputGroupPrepend" required="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-sm-6 mt-3">
+                                <label for="form-label"for="validationCustompassword">Password</label>
+                                <div class="input-group">
+                                    <input class="form-control" id="validationCustompassword" type="text"
+                                    placeholder="password" aria-describedby="inputGroupPrepend" required="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-sm-6 mt-3">
+                                <button class="btn btn-primary" type="button" (click)="submit()">Submit Form</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
